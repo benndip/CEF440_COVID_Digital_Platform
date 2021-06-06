@@ -9,10 +9,10 @@
 <body>
  <form action="/sessions/check-2fa" method="POST">
   <div>
-    <label for="token">Please enter the code you were sent:</label>
-    <input type="text" name="token" id="token" />
+    <label for="pin">Please enter the code you were sent:</label>
+     <input type="password" name="pin" id="pin" inputmode="numeric" pattern="[0-9]*"/>
   </div>
-  <button type="submit">Check token</button>
+  <button type="submit" value="submit">Check PIN</button>
 </form>
 </body>
 </html>
