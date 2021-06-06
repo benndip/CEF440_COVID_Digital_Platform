@@ -8,12 +8,31 @@
 <link href="styles.css" rel="stylesheet" type="text/css"></link>
 </head>
 <body>
- <form action="/sessions/check-2fa" method="POST">
-  <div>
-    <label for="pin">Please enter user PIN:</label>
-     <input type="password" name="pin" id="pin" inputmode="numeric" pattern="[0-9]*"/>
+ <div class="login_form">
+  <div class="details">
+    <div class="welcome">Welcome</div>
+    <form action="/" method="post">
+      <div class="wrap">
+        <label>Password</label>
+        <input type="password" class="input" name="pin" id="pin" data-type="password">
+      </div>
+      <div class="wrap">
+        <label>Forgot password?</label>
+      </div>
+      <button type="submit" class="button">
+        <h1 class="sign">Sign in!</h1>
+      </button>
+    </form>
+   </div>
+  <div class="details-two">
+    <h1 class="back">Stay safe!</h1>
+    <p class="log">If you don’t feel well, stay home. Even if you have mild symptoms like a headache and runny nose, stay in until you’re better. This lets doctors focus on people who are more seriously ill and protects health care workers and people you might meet along the way. You might hear this called self-quarantine. Try to stay in a separate room away from other people in your home. Use a separate bathroom if you can.</p>
+    <h2 class="acc">You don't have an account?<br>Create</h2>
+    <button class="customer">
+      <h3>Create Account</h3>
+    </button>
   </div>
-  <button type="submit" value="Submit">Check PIN</button>
-</form>
+
+</div>
 </body>
 </html>
