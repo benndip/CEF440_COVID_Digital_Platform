@@ -13,7 +13,7 @@
     <div class="welcome">Welcome</div>
     <form action="/" method="post">
       <div class="wrap">
-        <label>Password</label>
+        <label>Enter pin</label>
         <input type="password" class="input" name="pin" id="pin" data-type="password">
       </div>
       <div class="wrap">
