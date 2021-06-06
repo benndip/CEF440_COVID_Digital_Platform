@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nerko One', cursive;
+}
+:root {
+  --colour-one: #ffd1b7;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--colour-one);
+}
