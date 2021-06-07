@@ -5,9 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="ForgotPinStyles.css" rel="stylesheet" type="text/css"></link>
 </head>
-<body>
-	<div align="center">
+<body class="section">
+<div class="box">
+
+    <div class="square" style="--i:0;"></div>
+    <div class="square" style="--i:1;"></div>
+    <div class="square" style="--i:2;"></div>
+    <div class="square" style="--i:3;"></div>
+    <div class="square" style="--i:4;"></div>
+    <div class="square" style="--i:5;"></div>
+	<div class="container">
+		<div class="class="section"">
         <h2>Reset Your Password</h2>
         <p>
         Please enter your login email, we'll send a new random password to your inbox:
@@ -26,6 +36,7 @@
                 </tr>    
             </table>
         </form>
+        </div>
     </div>
 </body>
 </html>
