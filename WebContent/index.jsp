@@ -16,11 +16,12 @@
         <label>Beneficiary's name</label>
         <input type="text" class="input">
         </div>
-         <div class="wrap">
-        <label>Tel Number</label>
-        <input type="number" class="input">
+        <div class="wrap">
+        <label>Email</label>
+        <input type="text" class="input">
         </div>
       <div class="wrap">
+      
         <label>Enter pin</label>
         <input type="password" class="input" name="pin" id="pin" data-type="password">
       </div>
