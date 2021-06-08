@@ -17,7 +17,7 @@
         <input type="text" class="input">
         </div>
         <div class="wrap">
-        <label>Email</label>
+        <label>Tel No.</label>
         <input type="text" class="input">
         </div>
       <div class="wrap">
