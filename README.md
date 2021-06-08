@@ -6,6 +6,7 @@ Steps to get started
 * `clone` your own fork not the main
 * Do git checkout `name of your branch` for example `git checkout Group1/Authentication`
 * To push to your own branch, 
+
 `git add .`
 
 `gitcommit -m "What you did"`
