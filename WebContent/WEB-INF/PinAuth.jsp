@@ -11,7 +11,9 @@
  <div class="login_form">
   <div class="details">
     <div class="welcome">Welcome</div>
-    <form action="/" method="post">
+    <br><div class="error_message">${message}</div>
+            <br>
+    <form action="login" method="post">
     <div class="wrap">
         <label>Beneficiary's name</label>
         <input type="text" class="input">
