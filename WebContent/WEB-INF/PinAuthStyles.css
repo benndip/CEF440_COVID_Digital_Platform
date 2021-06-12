@@ -48,6 +48,11 @@ body {
   font-size: 25px;
   top: 15%;
 }
+.error_message {
+	color:red;
+	font-size:18px;
+	
+}
 .wrap:nth-child(1) {
   position: absolute;
   top: 25%;
@@ -129,7 +134,7 @@ label {
   top: 82%;
   left: 52%;
   color: var(--colour-five);
-  background: var(--colour-four);
+  background: white;
   border-radius: 5px;
   border: none;
 }
