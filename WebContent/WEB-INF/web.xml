@@ -24,9 +24,7 @@
                   <web-resource-name>WRCollection</web-resource-name>
                  <url-pattern>/*</url-pattern>
          </web-resource-collection>
-            <auth-constraint>
-                  <role-name>loginUser</role-name>
-            </auth-constraint>
+          
             <user-data-constraint>
                 <transport-guarantee>NONE</transport-guarantee>
             </user-data-constraint>
