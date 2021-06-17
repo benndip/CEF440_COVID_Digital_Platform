@@ -17,25 +17,17 @@
 	    <div class="square" style="--i:4;"></div>
 	    <div class="square" style="--i:5;"></div>
 		<div class="container"></div>
-	        <h2>Reset Your Password</h2>
-	        <p>
-	        Please enter your login email, we'll send a new random password to your inbox:
-	        </p>
+	       
 	         
-	        <form id="resetForm" action="reset_password" method="post">
-	            <table>
-	                <tr>
-	                    <td>Email:</td>
-	                    <td><input type="text" name="email" id="email" size="20"></td>
-	                </tr>
-	                <tr>
-	                    <td colspan="2" align="center">
-	                        <button type="submit">Send me new password</button>
-	                    </td>
-	                </tr>    
-	            </table>
+	        <form id="resetForm" action="./ForgotPinServlet" method="post">
+	        <h1>Enter your  Email address to give your new password</h1><br>
+	           Enter Email: <input type = "text" name= "email"><br>
+	           New_Password: <input type = "text" name= "pass"><br>
+	           Confirm_Password: <input type = "text" name= "cpass"><br>
+	           <input type = "submit" value = "Click"> 
+	           
 	        </form>
 	        </div>
-    </div>
+    
 </body>
 </html>
