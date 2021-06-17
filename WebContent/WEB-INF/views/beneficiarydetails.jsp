@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Landing Page</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>We are Landing now. Get started From here :)</h1>
+	<div align="center">
+	<h1>Beneficiary information successfully taken into account</h1>
+	</div>
 </body>
 </html>
