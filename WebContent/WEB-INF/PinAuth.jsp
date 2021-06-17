@@ -16,11 +16,11 @@
     <form action="login" method="post">
     <div class="wrap">
         <label>Beneficiary's name</label>
-        <input type="text" class="input">
+        <input type="text" class="input" name="beneficiary_name">
         </div>
         <div class="wrap">
         <label>Tel No.</label>
-        <input type="text" class="input">
+        <input type="text" class="input" name="beneficiary_tel">
         </div>
       <div class="wrap">
       
