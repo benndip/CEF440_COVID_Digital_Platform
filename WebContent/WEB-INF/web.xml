@@ -17,4 +17,18 @@
   	<servlet-name>test</servlet-name>
   	<url-pattern>/landingPage</url-pattern>
   </servlet-mapping>
+  
+  <security-constraint>
+             <display-name>SecurityConstraint</display-name>
+            <web-resource-collection>
+                  <web-resource-name>WRCollection</web-resource-name>
+                 <url-pattern>/*</url-pattern>
+         </web-resource-collection>
+            <auth-constraint>
+                  <role-name>loginUser</role-name>
+            </auth-constraint>
+            <user-data-constraint>
+                <transport-guarantee>NONE</transport-guarantee>
+            </user-data-constraint>
+       </security-constraint>
 </web-app>
