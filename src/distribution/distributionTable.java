@@ -1,6 +1,9 @@
 package distribution;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,7 +31,7 @@ public class distributionTable extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		DistributionItem[] distributionItems = {
+		DistributionItem[] distributionItems =  {
 				new DistributionItem(1,"South-West",12,20,3,7),
 				new DistributionItem(1,"North-West",12,20,3,7),
 				new DistributionItem(1,"Litoral",12,20,3,7),
@@ -40,6 +43,7 @@ public class distributionTable extends HttpServlet {
 				new DistributionItem(1,"Adamawa",12,20,3,7),
 				new DistributionItem(1,"Center",12,20,3,7),
 		};
+		System.out.println("yaya "+ distributionItems[0].region );
 		
 		request.setAttribute("distributionItems", distributionItems);
 
