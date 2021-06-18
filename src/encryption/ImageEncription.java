@@ -27,6 +27,7 @@ public class ImageEncryption {
                     break;
                 case 'D':
                     //  decription function call goes here
+                    decrypt(image_path);
                 case 'Q':
                     quit();
                     break;
@@ -76,5 +77,44 @@ public class ImageEncryption {
         fos.close();
         fis.close();
         System.out.println("Encyption Done...");
+
+    }
+    public void decrypt(){
+        
+		// Here key is act as password to Encrypt Image
+		// instantiate EncriptionProgram class
+        
+        
+							
+		// Selecting a Image for operation
+		FileInputStream fis = new FileInputStream(image_path);
+							
+		// Converting Image into byte array, create a
+		// array of same size as Image size
+							
+		byte data[] = new byte[fis.available()];
+
+        fis.read(data);
+        int i = 0;
+                             
+        // looping through each byte and decrypting using EncriptionProgram.java script
+        for (byte b : data) {
+            data[i] = ep.derypt(b)
+            i++;
+        }
+
+        // Opening a file for writing purpose
+        FileOutputStream fos = new FileOutputStream(image_path);
+                             
+        // Writing new byte array value to image which
+        // will Encrypt it.
+                             
+        fos.write(data);
+                             
+        // Closing file
+        fos.close();
+        fis.close();
+        System.out.println("Decryption Done...");
+
     }
 }
