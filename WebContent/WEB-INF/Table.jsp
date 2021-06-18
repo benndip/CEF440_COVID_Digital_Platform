@@ -8,6 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h1 class="text-center text-danger mt-5" >Distribution Table</h1>
 </body>
 </html>
