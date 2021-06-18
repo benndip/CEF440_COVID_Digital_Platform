@@ -45,10 +45,10 @@ Connection conn = DBConnection.getConnection();
 			String cpin1 = request.getParameter("cpin");
 			
 			
-		
-			
-			
-			
+			PreparedStatement ps = conn.prepareStatement("update email_password set password=? where email=?");
+			ps.setString(1, pin1);
+			ps.setString(2,email);
+	
 		}
 	catch(Exception e){
 		e.printStackTrace();
