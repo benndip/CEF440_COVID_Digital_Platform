@@ -1,0 +1,9 @@
+[2021-06-18 16:38:15.644] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-06-18 16:42:47.425] [sharedprocess] [info] Installing extension: pthorsson.vscode-jsp
+[2021-06-18 16:42:49.004] [sharedprocess] [info] Downloaded extension: pthorsson.vscode-jsp undefined
+[2021-06-18 16:42:49.032] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.pthorsson.vscode-jsp-0.0.3: pthorsson.vscode-jsp
+[2021-06-18 16:42:49.033] [sharedprocess] [info] Renamed to /root/.vscode/extensions/pthorsson.vscode-jsp-0.0.3
+[2021-06-18 16:42:49.034] [sharedprocess] [info] Installation completed. pthorsson.vscode-jsp
+[2021-06-18 16:42:49.085] [sharedprocess] [info] Extensions installed successfully: pthorsson.vscode-jsp
+[2021-06-18 16:45:29.864] [sharedprocess] [info] Uninstalling extension: pthorsson.vscode-jsp
+[2021-06-18 16:45:29.941] [sharedprocess] [info] Successfully uninstalled extension: pthorsson.vscode-jsp
