@@ -27,6 +27,7 @@ public class ImageEncryption {
                     break;
                 case 'D':
                     //  decription function call goes here
+                    decrypt(image_path);
                 case 'Q':
                     quit();
                     break;
