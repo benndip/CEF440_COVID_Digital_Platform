@@ -20,10 +20,10 @@
 	       
 	         
 	        <form id="resetForm" action="./ForgotPinServlet" method="post">
-	        <h1>Enter your  Email address to give your new password</h1><br>
+	        <h1>Enter your  Email address to give your new PIN CODE</h1><br>
 	           Enter Email: <input type = "text" name= "email"><br>
-	           New_Password: <input type = "text" name= "pass"><br>
-	           Confirm_Password: <input type = "text" name= "cpass"><br>
+	           New_PIN_Code: <input type = "text" name= "pin" value = ""><br>
+	           Confirm_PIN_Code: <input type = "text" name= "cpin" value = ><br>
 	           <input type = "submit" value = "Click"> 
 	           
 	        </form>

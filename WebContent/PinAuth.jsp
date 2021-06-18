@@ -26,7 +26,10 @@
         <input type="password" class="input" name="pin" id="pin" data-type="password">
       </div>
       <div class="wrap">
-        <label><i>Forgot password?</i></label>
+      <a href = "ForgotPin.jsp">
+      <label><i>Forgot password?</i></label>
+      </a>
+        
       </div>
       <button type="submit" class="button">
         <h1 class="sign">Sign in!</h1>
