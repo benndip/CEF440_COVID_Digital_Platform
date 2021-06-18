@@ -70,7 +70,7 @@ public class DemoServlet extends HttpServlet {
             e.printStackTrace();
             
         }
-//		doGet(request, response);
+
 	}
 
 }
