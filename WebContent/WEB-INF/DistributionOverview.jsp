@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-   <link
+  <head>
+    <meta charset="UTF-8" />
+    <title>Distribution Module</title>
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
- <style>
+    <style>
       body {
         overflow: hidden;
       }
@@ -84,7 +84,7 @@
         background-color: white;
       }
       .btnss {
-      margin-top:20%;
+        margin-top: 20%;
       }
       .name {
         display: flex;
@@ -93,10 +93,10 @@
         padding-top: 25px;
       }
     </style>
-</head>
-<body>
-<section class="main" >
-<div class="sub-main">
+  </head>
+  <body>
+    <section class="main">
+      <div class="sub-main">
         <div class="box">
           <div class="box-1">
             <div class="name">
@@ -110,23 +110,26 @@
           </div>
           <div class="box-2">
             <div class="btnss">
+            	
               <div>
-                <button class="btn btn-outline-danger btn-lg">
-                  View Chart
-                </button>
+                <a href="distributionTable"><button class="btn btn-outline-danger btn-lg">
+				View Table
+                </button></a>
               </div>
               <div>
-                <button class="btn btn-outline-danger btn-lg">View Map</button>
+                 <a href="renderingMap"><button class="btn btn-outline-danger btn-lg">
+				View Map
+                </button></a>
               </div>
               <div>
-                <button class="btn btn-outline-danger btn-lg">
-                  View Table
-                </button>
+                <a href="distribution"><button class="btn btn-outline-danger btn-lg">
+				View Chart
+                </button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-</section>
-</body>
+    </section>
+  </body>
 </html>
