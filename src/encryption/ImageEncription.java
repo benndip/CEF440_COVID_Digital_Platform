@@ -7,16 +7,17 @@ import java.util.Scanner;
 public class ImageEncryption {
 	
 		
-	// ImageEncryption(){
-
-						
-	// }
+	ImageEncryption(){
+         Scanner scanner = new Scanner(System.in);
+			
+	}
 
    private void askQuestion(image_path){
         while (true){
             System.out.println("*************************************************");
             System.out.println("What do you want to do with image?");
             System.out.println("(E)ncrypt, (D)ecrypt, (Q)uit");
+
             char response = Character.toUpperCase(scanner.nextLine().charAt(0));
 
             switch (response){
@@ -36,7 +37,7 @@ public class ImageEncryption {
     }
 
     public void encript(image_path){
-        Scanner sc = new Scanner(System.in);
+       
 		System.out.println("Note : Encryption Key act as Password to
 		Decrypt the same Image,otherwise it will corrupt the Image.");
 	

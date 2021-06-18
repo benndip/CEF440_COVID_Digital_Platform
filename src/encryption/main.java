@@ -6,6 +6,7 @@ public class main {
             System.out.println("*************************************************");
             System.out.println("What type is the data you want to encript or decript?");
             System.out.println("(S)tring, (N)Number, (I)mage, (Q)uit");
+            Scanner scanner = new Scanner(System.in);
             char response = Character.toUpperCase(scanner.nextLine().charAt(0));
 
 
