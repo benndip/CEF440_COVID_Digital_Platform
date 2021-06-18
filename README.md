@@ -1,3 +1,4 @@
+Design and coded by TEMBUCK FRANCO MUNONG---FE18A099
 # CEF440_COVID_Digital_Platform
 This is a platform that helps to manage the COVID 19 problem.
 This is a Homepage and Landing page of covid-19.
