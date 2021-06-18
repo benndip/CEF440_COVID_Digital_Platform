@@ -7,10 +7,10 @@ import java.util.Scanner;
 public class ImageEncryption {
 	
 		
-	ImageEncryption(){
+	// ImageEncryption(){
 
 						
-	}
+	// }
 
    private void askQuestion(image_path){
         while (true){
