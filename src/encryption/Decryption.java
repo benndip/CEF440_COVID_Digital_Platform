@@ -26,7 +26,6 @@ public class Decryption {
 
         int key = sc.nextInt(); 
 
-            
 
         // Selecting a Image for Decryption. 
 
