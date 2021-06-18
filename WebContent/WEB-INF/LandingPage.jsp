@@ -7,6 +7,6 @@
 <title>Landing Page</title>
 </head>
 <body>
-<h1>We are Landing now. Get started From here :)</h1>
+<h1>We are Landing now from group 4</h1>
 </body>
 </html>
