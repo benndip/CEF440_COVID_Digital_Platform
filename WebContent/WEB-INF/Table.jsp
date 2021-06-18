@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<% 
-    String hidden = request.getParameter("distributionItems");
-%>
+pageEncoding="ISO-8859-1"%> <%@taglib prefix="c"
+uri="http://java.sun.com/jsp/jstl/core" %> <% String hidden =
+request.getParameter("distributionItems"); %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +15,6 @@ pageEncoding="ISO-8859-1"%>
     <title>Insert title here</title>
   </head>
   <body>
-  
     <div class="w-100 mt-3 d-flex justify-content-center">
       <table class="table w-50">
         <thead class="thead-dark">
@@ -46,7 +43,7 @@ pageEncoding="ISO-8859-1"%>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <th> Litoral</th>
+            <th>Litoral</th>
             <td>34</td>
             <td>23</td>
             <td>8</td>
@@ -89,6 +86,13 @@ pageEncoding="ISO-8859-1"%>
           <tr>
             <th scope="row">9</th>
             <th>Center</th>
+            <td>45</td>
+            <td>23</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <th>Far-North</th>
             <td>45</td>
             <td>23</td>
             <td>12</td>
