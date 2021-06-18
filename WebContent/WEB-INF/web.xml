@@ -17,4 +17,14 @@
   	<servlet-name>test</servlet-name>
   	<url-pattern>/landingPage</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>PieChartServlet</servlet-name>
+		<servlet-class>distribution.PieChartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PieChartServlet</servlet-name>
+		<url-pattern>/distribution</url-pattern>
+	</servlet-mapping>
+  
 </web-app>
