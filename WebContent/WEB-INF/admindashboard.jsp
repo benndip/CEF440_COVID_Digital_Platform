@@ -71,7 +71,7 @@ tr:nth-child(odd) {
 <div class="codvid1">
    <table style="width:100%">
   <tr>
-    <th>Town</th>
+    <th>TOWN</th>
     <th>Number of cases</th>
     <th>Number of Recovery</th>
     <th>Number of Deaths</th>
