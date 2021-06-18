@@ -25,6 +25,15 @@ public class ImageEncryption {
 		// array of same size as Image size
 							
 		byte data[] = new byte[fis.available()];
+
+        fis.read(data);
+        int i = 0;
+                             
+        // looping through each byte and ecripting using EncriptionProgram.java script
+        for (byte b : data) {
+            data[i] = ep.encrypt(b)
+            i++;
+        }
 							
 		
 	}
