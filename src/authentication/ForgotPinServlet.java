@@ -48,6 +48,20 @@ Connection conn = DBConnection.getConnection();
 			PreparedStatement ps = conn.prepareStatement("update email_password set password=? where email=?");
 			ps.setString(1, pin1);
 			ps.setString(2,email);
+			
+			if((pin1.equals(cpin1) && pin1 != null && cpin1 != null) && ((pin1.length() == 4) && cpin1.length() == 4)) {
+				int i = ps.executeUpdate();
+				if(i>0) {
+					response.sendRedirect("updatedPIN.jsp");
+				}
+				else {
+				response.sendRedirect("error.jsp");
+			}
+			}
+			else {
+				response.sendRedirect("error.jsp");
+			}
+
 	
 		}
 	catch(Exception e){
