@@ -8,6 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1 class="text-center text-align   text-info mb-3 mt-2" >Distribution Table</h1>
+
 <table class="table">
   <thead class="thead-dark">
     <tr>
