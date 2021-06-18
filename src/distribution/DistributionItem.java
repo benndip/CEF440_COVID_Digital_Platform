@@ -1,14 +1,14 @@
 package distribution;
 
 public class DistributionItem {
-	private Integer id;
+	private int id;
 	private String region;
-	private String peopleInRegion;
-	private String infectedPeople;
-	private String agentsToSend;
-	private String numberOfItemsToGive;
+	private int peopleInRegion;
+	private int infectedPeople;
+	private int agentsToSend;
+	private int numberOfItemsToGive;
 
-	public DistributionItem(int id, String region, String peopleInRegion, String infectedPeople, String agentsToSend, String numberOfItemsToGive ) {
+	public DistributionItem(int id, String region, int peopleInRegion, int infectedPeople, int agentsToSend, int numberOfItemsToGive ) {
 		this.id = id;
 		this.region = region;
 		this.peopleInRegion = peopleInRegion;
