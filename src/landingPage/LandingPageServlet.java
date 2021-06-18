@@ -1,5 +1,13 @@
 package landingPage;
 
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,16 +16,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LandingPageServlet
+ * 
+ * Servlet implementation class DemoServlet
  */
-@WebServlet("/LandingPageServlet")
-public class LandingPageServlet extends HttpServlet {
+@WebServlet("/DemoServlet")
+public class DemoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LandingPageServlet() {
+    public DemoServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +36,7 @@ public class LandingPageServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/LandingPage.jsp").forward(request, response);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -35,7 +44,33 @@ public class LandingPageServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+        try {
+        	String town= request.getParameter("town");
+        	String quater= request.getParameter("quater");
+        	String region= request.getParameter("region");
+             Connection conn = DatabaseConnection.initializeDatabase();
+  
+             String QUERY = "SELECT FROM HOUSEHOLD (infected,total,name)"
+                   		+ " WHERE town="+town+" AND quater="+quater+" AND region="+region;
+  
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(QUERY);
+             Family fam []= {};
+          	    
+             int i=0;
+             while(rs.next()){
+                
+                 fam[i]= new Family(rs.getString("name"), rs.getString("infected"), rs.getString("total"));
+               i++;
+             }
+             
+             request.setAttribute("ResultSet", fam);
+             }
+        catch (Exception e) {
+            e.printStackTrace();
+            
+        }
+//		doGet(request, response);
 	}
 
 }
