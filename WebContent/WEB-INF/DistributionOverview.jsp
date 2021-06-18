@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+   <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
  <style>
       body {
         overflow: hidden;
@@ -71,15 +77,14 @@
       }
       button {
         width: 70%;
-        padding: 88px;
-        margin: 8px;
+        padding: 26px;
+        margin: 15px;
         margin-left: 15%;
         border-radius: 5px;
         background-color: white;
       }
       .btnss {
-        margin-top: 27%;
-        display: grid;
+      margin-top:20%;
       }
       .name {
         display: flex;
@@ -99,7 +104,7 @@
             </div>
             <div>
               <div class="box-11">
-                <img src="new.jpg" alt="" width="70%" height="60%" />
+                <img src="./3593987 1.png" alt="" width="70%" height="60%" />
               </div>
             </div>
           </div>
