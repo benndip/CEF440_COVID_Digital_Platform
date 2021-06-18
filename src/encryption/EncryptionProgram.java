@@ -22,9 +22,9 @@ public class EncryptionProgram {
         character = ' ';
 
         newKey();
-        askQuestion();
+        // askQuestion();
     }
-    private void askQuestion(){
+    private void askQuestion(message){
         while (true){
             System.out.println("*************************************************");
             System.out.println("What do you want to do?");
@@ -39,10 +39,13 @@ public class EncryptionProgram {
                     getKey();
                     break;
                 case 'E':
-                    encrypt();
+                    String encripted_msg = encrypt(message);
+                    System.out.println(encripted_msg);
                     break;
                 case 'D':
-                    decrypy();
+                    String decripted_msg = decrypy(message);
+                    System.out.println(decripted_msg);
+
                     break;
                 case 'Q':
                     quit();
@@ -77,8 +80,8 @@ public class EncryptionProgram {
         
     }
     private void encrypt(message){
-        System.out.println("Enter a message to be encrypted");
-        String message = scanner.nextLine();
+       
+        String message = message
 
         letters = message.toCharArray();
         for(int i = 0; i < letters.length; i++){
@@ -97,9 +100,9 @@ public class EncryptionProgram {
         return letters
 
     }
-    private void decrypy(){
-        System.out.println("Enter a message to be decrypted");
-        String message = scanner.nextLine();
+    private void decrypy(message){
+     
+        String message = message
 
         letters = message.toCharArray();
         for(int i = 0; i < letters.length; i++){
@@ -114,6 +117,7 @@ public class EncryptionProgram {
             System.out.print(x);
         }
         System.out.println();
+        return letters
     }
     private void quit(){
         System.out.println("Exiting Program");
