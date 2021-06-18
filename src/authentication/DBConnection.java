@@ -16,7 +16,6 @@ public class DBConnection {
 		Class.forName("com.mysql.cj.jdbc.Driver");  
 		Connection con=DriverManager.getConnection(  
 		"jdbc:mysql://localhost:3306/mobile_programming","root","");  
-		//here sonoo is database name, root is username and password  
 		
 	 return con;
 		}
