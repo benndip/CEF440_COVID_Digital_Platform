@@ -6,18 +6,19 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import distribution.DistributionItem;
 
 /**
- * Servlet implementation class renderingMap
+ * Servlet implementation class distributionTable
  */
-@WebServlet("/renderingMap")
-public class renderingMap extends HttpServlet {
+@WebServlet("/distributionTable")
+public class distributionTable extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public renderingMap() {
+    public distributionTable() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +28,8 @@ public class renderingMap extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/Map.jsp").forward(request, response);
+		
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Table.jsp").forward(request, response);
 	}
 
 	/**
