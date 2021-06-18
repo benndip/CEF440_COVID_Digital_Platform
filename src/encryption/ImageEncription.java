@@ -16,10 +16,11 @@ public class ImageEncryption {
 		// Decrypt the Image
 		// get encription key from EncriptionProgramming.java
         EncryptionProgram ep = new EncryptionProgram();
+    
       
 							
 		// Selecting a Image for operation
-		FileInputStream fis = new FileInputStream('Back_Marché.png');
+		FileInputStream fis = new FileInputStream('./Back_Marché.png');
 							
 		// Converting Image into byte array, create a
 		// array of same size as Image size
@@ -34,6 +35,19 @@ public class ImageEncryption {
             data[i] = ep.encrypt(b)
             i++;
         }
+
+        // Opening a file for writing purpose
+        FileOutputStream fos = new FileOutputStream("./Back_Marché.png");
+                             
+        // Writing new byte array value to image which
+        // will Encrypt it.
+                             
+        fos.write(data);
+                             
+        // Closing file
+        fos.close();
+        fis.close();
+        System.out.println("Encyption Done...");
 							
 		
 	}
