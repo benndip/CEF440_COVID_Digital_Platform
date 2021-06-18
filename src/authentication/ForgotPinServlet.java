@@ -38,9 +38,14 @@ public class ForgotPinServlet extends HttpServlet {
 //		doGet(request, response);
 		
 		try {
+Connection conn = DBConnection.getConnection(); 
+			
+			String email = request.getParameter("email");
+			String pin1 = request.getParameter("pin");
+			String cpin1 = request.getParameter("cpin");
 			
 			
-			
+		
 			
 			
 			
