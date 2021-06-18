@@ -76,7 +76,7 @@ public class EncryptionProgram {
         }
         
     }
-    private void encrypt(){
+    private void encrypt(message){
         System.out.println("Enter a message to be encrypted");
         String message = scanner.nextLine();
 
@@ -93,6 +93,8 @@ public class EncryptionProgram {
             System.out.print(x);
         }
         System.out.println();
+
+        return letters
 
     }
     private void decrypy(){
