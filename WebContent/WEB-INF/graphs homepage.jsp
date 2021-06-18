@@ -18,7 +18,24 @@
  
  <%	
 Map<String, Integer> dataValuePair = new HashMap<String, Integer>();
-String xVal, yVal;		  
+String xVal, yVal;		
+
+try {
+	Class.forName("org.postgresql.Driver"); 
+	Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5433/covid_db", "postgres", " ");
+	Statement statement = connection.createStatement();
+	ResultSet resultSet = statement.executeQuery("select * from regions");
+	ResultSetMetaData rsmd = resultSet.getMetaData();
+	
+	while(resultSet.next()){
+		xVal = resultSet.getString("regions_name");
+		yVal = resultSet.getString("no_infected");
+		dataValuePair.put(xVal, Integer.parseInt(yVal));
+		}
+    System.out.println("Connected to the PostgreSQL server successfully.");
+    } catch (Exception e) {
+      	System.out.println("Failed to connect to PostgreSQL server.");  
+      	}  
  
 //store chart config name-config value pair
 Map<String, String> chartConfig = new HashMap<String, String>();
