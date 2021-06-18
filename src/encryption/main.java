@@ -1,11 +1,7 @@
 package encryption;
 public class main {
-    public static void main(String[] args) {
 
-       
-       askQuestion();
-
-        private void askQuestion(){
+     private void askQuestion(){
         while (true){
             System.out.println("*************************************************");
             System.out.println("What type is the data you want to encript or decript?");
@@ -35,7 +31,7 @@ public class main {
                     // ask user to enter string 
                     System.out.println("Enter Image Path");
                     String message = scanner.nextLine()
-                    ie.encript(image_path)
+                    ie.askQuestion(image_path)
                   
                     break;
                 case 'Q':
@@ -46,5 +42,13 @@ public class main {
             }
         }
     }
+    public static void main(String[] args) {
+
+       
+       askQuestion();
+
     }
+
+
+
 }

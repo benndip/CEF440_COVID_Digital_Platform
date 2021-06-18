@@ -8,9 +8,32 @@ public class ImageEncryption {
 	
 		
 	ImageEncryption(){
+
 						
 	}
 
+   private void askQuestion(image_path){
+        while (true){
+            System.out.println("*************************************************");
+            System.out.println("What do you want to do with image?");
+            System.out.println("(E)ncrypt, (D)ecrypt, (Q)uit");
+            char response = Character.toUpperCase(scanner.nextLine().charAt(0));
+
+            switch (response){
+              
+                case 'E':
+                    encrypt(image_path);
+                    break;
+                case 'D':
+                    //  decription function call goes here
+                case 'Q':
+                    quit();
+                    break;
+                default:
+                    System.out.println("Not a valid answer");
+            }
+        }
+    }
 
     public void encript(image_path){
         Scanner sc = new Scanner(System.in);
