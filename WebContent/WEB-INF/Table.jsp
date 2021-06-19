@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%> 
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> <%@taglib prefix="c"
+uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,8 +14,8 @@
     <title>Insert title here</title>
   </head>
   <body>
-  	<c: value="${system.out.println(distributionItems);}" />
-  	
+    <c: value="${system.out.println(distributionItems);}" />
+
     <div class="w-100 mt-3 d-flex justify-content-center">
       <table class="table w-75 text-center">
         <thead class="thead-dark">
@@ -22,7 +23,7 @@
             <th scope="col">ID</th>
             <th scope="col">Region</th>
             <th scope="col">Total Number People</th>
-            <th scope="col">Number of Infected People </th>
+            <th scope="col">Number of Infected People</th>
             <th scope="col">Agent sent</th>
             <th scope="col">Gift to be sent</th>
           </tr>
@@ -35,7 +36,6 @@
             <td>7</td>
             <td>2</td>
             <td>3</td>
-            
           </tr>
           <tr>
             <th scope="row">2</th>
