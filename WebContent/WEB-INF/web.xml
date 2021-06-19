@@ -17,4 +17,29 @@
   	<servlet-name>test</servlet-name>
   	<url-pattern>/landingPage</url-pattern>
   </servlet-mapping>
+  
+  <!-- Admin configurations -->
+  
+  <servlet>
+  	<servlet-name>admin_operations</servlet-name>
+  	<servlet-class>covid.admin.stockmanagement.AdminOperations</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>admin_operations</servlet-name>
+  	<url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Agent configurations -->
+  
+  <servlet>
+  	<servlet-name>agent_operations</servlet-name>
+  	<servlet-class>covid.agent.stockmanagement.AgentOperations</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>agent_operations</servlet-name>
+  	<url-pattern>/agent</url-pattern>
+  </servlet-mapping>
 </web-app>

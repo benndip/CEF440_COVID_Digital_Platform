@@ -1,5 +1,6 @@
 # CEF440_COVID_Digital_Platform
 This is a platform that helps to manage the COVID 19 problem.
+<<<<<<< HEAD
 
 Steps to get started
 * `Fork` the main repo to have a copy of yours.
@@ -19,3 +20,6 @@ Steps to get started
 ONLY THE GROUP LEADS ARE ALLOWED TO MAKE PULL REQUESTS
 
 EVERYBODY SHOULD FORK FROM MAIN NOT FROM YOUR LEAD'S BRANCH
+=======
+The Admin interface is the layout is where the admin can view all the transaction , it can see the stock and other feature 
+>>>>>>> f807d462e4b022ad34594fab54380ac0baa8293f
