@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<style><%@include file="/WEB-INF/PinAuthStyles.css"%></style>
+<title>PIN Auth</title>
+<style><%@include file="/PinAuthStyles.css"%></style>
 </head>
 <body>
  <div class="login_form">
@@ -28,7 +28,10 @@
         <input type="password" class="input" name="pin" id="pin" data-type="password">
       </div>
       <div class="wrap">
-        <label><i>Forgot password?</i></label>
+      <a href = "ForgotPin.jsp">
+      <label><i>Forgot password?</i></label>
+      </a>
+        
       </div>
       <button type="submit" class="button">
         <h1 class="sign">Sign in!</h1>

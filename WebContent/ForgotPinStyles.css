@@ -256,7 +256,7 @@ img {
 
 .box {
   position: relative;
-  
+}
   .square {
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
@@ -322,7 +322,7 @@ img {
     right: -155px;
     z-index: 2;
   }
-}
+
 
 .container {
   position: relative;
@@ -355,7 +355,7 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-
+}
    h2 {
     color: #fff;
     letter-spacing: 2px;
@@ -366,7 +366,7 @@ img {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-    
+  }
     input {
       width: 80%;
       outline: none;
@@ -445,13 +445,13 @@ img {
       transform: translateX(-30px) translateY(-25px);
       font-size: 12px;
     }
-  }
+  
   
   p {
     color: #fff;
     font-size: 15px;
     margin-top: 5px;
-  
+  }
     a {
       color: #fff;
     }
@@ -462,8 +462,7 @@ img {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-  }
-}
+  
 
 .remember {
   position: relative;

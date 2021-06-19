@@ -40,3 +40,43 @@ a{
 h1{
 	padding: 20px;
 }
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'El Messiri', sans-serif;
+}
+:root {
+  --colour-one: #ffd1b7;
+  --colour-two: #fee4d4;
+  --colour-three: #fdb493;
+  --colour-four: #fb966f;
+  --colour-five: #f45f34;
+  --colour-six: #302825;
+  --colour-seven: #a69f9c;
+  --colour-eight: #707e8d;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd1b7;
+}
+button {
+  background:#fee4d4;
+  position: absolute;
+  padding: 5px;
+  color: var(--colour-one);
+  border-radius: 10px;
+  border: none;
+  cursor:pointer;
+  right: 45%;
+  padding: 15px
+}
+a{
+	text-decoration: none;	
+}
+h1{
+	padding: 20px;
+}

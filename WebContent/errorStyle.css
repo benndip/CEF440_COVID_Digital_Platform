@@ -18,8 +18,30 @@ body {
 }
 
 li{
-	padding: 16px;
-  
+	padding: 15px;
 }
 
 
+@charset "ISO-8859-1";
+
+
+@charset "ISO-8859-1";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'El Messiri', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd1b7;
+}
+
+li{
+	padding: 16px;
+  
+}
