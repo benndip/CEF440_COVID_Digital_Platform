@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>CEF440_COVID_Digital_Platform</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <servlet>
-	<servlet-name>test</servlet-name>
-	<servlet-class>landingPage.LandingPageServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>test</servlet-name>
-  	<url-pattern>/landingPage</url-pattern>
-  </servlet-mapping>
+  <display-name>StockManagement</display-name>
   
   <!-- Admin configurations -->
   
@@ -42,4 +26,5 @@
     <servlet-name>agent_operations</servlet-name>
   	<url-pattern>/agent</url-pattern>
   </servlet-mapping>
+  
 </web-app>
