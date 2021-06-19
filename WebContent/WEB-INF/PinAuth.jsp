@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>PIN Auth</title>
 <style><%@include file="/PinAuthStyles.css"%></style>
 </head>
 <body>
