@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-pageEncoding="ISO-8859-1"%> <%@taglib prefix="c"
-uri="http://java.sun.com/jsp/jstl/core" %>
+pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,8 +13,6 @@ uri="http://java.sun.com/jsp/jstl/core" %>
     <title>Insert title here</title>
   </head>
   <body>
-    <c: value="${system.out.println(distributionItems);}" />
-
     <div class="w-100 mt-3 d-flex justify-content-center">
       <table class="table w-75 text-center">
         <thead class="thead-dark">
