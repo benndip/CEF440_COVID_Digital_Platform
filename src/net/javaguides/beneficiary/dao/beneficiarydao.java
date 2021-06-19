@@ -12,8 +12,8 @@ public class beneficiarydao {
 
 	    public int registerbeneficiary(beneficiary covid_beneficiary) throws ClassNotFoundException {
 	        String INSERT_USERS_SQL = "INSERT INTO beneficiary" +
-	            "  (id, first_name, last_name, family_size, address, contact, town, profession) VALUES " +
-	            " (?, ?, ?, ?, ?, ?, ?, ?);";
+	            "  (id,covidcounter,aidscounter,hpbcounter,diabetescounter,cardiacdiseasecounter,cancercounter,lungdiseasecounter,asthmacounter) VALUES " +
+	            " (?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
 	        int result = 0;
 
@@ -25,13 +25,14 @@ public class beneficiarydao {
 	            // Step 2:Create a statement using connection object
 	            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
 	            preparedStatement.setInt(1, 1);
-	            preparedStatement.setString(2, covid_beneficiary.getFirstname());
-	            preparedStatement.setString(3, covid_beneficiary.getLastname());
-	            preparedStatement.setString(4, covid_beneficiary.getFamilysize());
-	            preparedStatement.setString(5, covid_beneficiary.getAddress());
-	            preparedStatement.setString(6, covid_beneficiary.getContact());
-	            preparedStatement.setString(7, covid_beneficiary.getTown());
-	            preparedStatement.setString(7, covid_beneficiary.getProfession());
+	            preparedStatement.setString(2, covid_beneficiary.getCovidcounter());
+	            preparedStatement.setString(3, covid_beneficiary.getAidscounter());
+	            preparedStatement.setString(4, covid_beneficiary.getHpbcounter());
+	            preparedStatement.setString(5, covid_beneficiary.getDiabetescounter());
+	            preparedStatement.setString(6, covid_beneficiary.getCardiacdiseasecounter());
+	            preparedStatement.setString(7, covid_beneficiary.getCancercounter());
+	            preparedStatement.setString(8, covid_beneficiary.getLungdiseasecounter());
+	            preparedStatement.setString(9, covid_beneficiary.getAsthmacounter());
 
 	            System.out.println(preparedStatement);
 	            // Step 3: Execute the query or update query

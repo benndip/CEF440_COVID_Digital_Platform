@@ -1,55 +1,61 @@
 package net.javaguides.beneficiary.model;
 
 public class beneficiary {
-		private String firstname;
-		private String lastname;
-		private String familysize;
-		private String address;
-		private String contact;
-		private String town;
-		private String profession;
-
+		private String covidcounter;
+		private String aidscounter;
+		private String hpbcounter;
+		private String diabetescounter;
+		private String cardiacdiseasecounter;
+		private String cancercounter;
+		private String lungdiseasecounter;
+		private String asthmacounter;
 		
-		public String getFirstname() {
-			return firstname;
+		public String getCovidcounter() {
+			return covidcounter;
 		}
-		public void setFirstname(String firstname) {
-			this.firstname = firstname;
+		public void setCovidcounter(String covidcounter) {
+			this.covidcounter = covidcounter;
 		}
-		public String getLastname() {
-			return lastname;
+		public String getAidscounter() {
+			return aidscounter;
 		}
-		public void setLastname(String lastname) {
-			this.lastname = lastname;
+		public void setAidscounter(String aidscounter) {
+			this.aidscounter = aidscounter;
 		}
-		public String getFamilysize() {
-			return familysize;
+		public String getHpbcounter() {
+			return hpbcounter;
 		}
-		public void setFamilysize(String familysize) {
-			this.familysize = familysize;
+		public void setHpbcounter(String hpbcounter) {
+			this.hpbcounter = hpbcounter;
 		}
-		public String getAddress() {
-			return address;
+		public String getDiabetescounter() {
+			return diabetescounter;
 		}
-		public void setAddress(String address) {
-			this.address = address;
+		public void setDiabetescounter(String diabetescounter) {
+			this.diabetescounter = diabetescounter;
 		}
-		public String getContact() {
-			return contact;
+		public String getCardiacdiseasecounter() {
+			return cardiacdiseasecounter;
 		}
-		public void setContact(String contact) {
-			this.contact = contact;
+		public void setCardiacdiseasecounter(String cardiacdiseasecounter) {
+			this.cardiacdiseasecounter = cardiacdiseasecounter;
 		}
-		public String getTown() {
-			return town;
+		public String getCancercounter() {
+			return cancercounter;
 		}
-		public void setTown(String town) {
-			this.town = town;
+		public void setCancercounter(String cancercounter) {
+			this.cancercounter = cancercounter;
 		}
-		public String getProfession() {
-			return profession;
+		public String getLungdiseasecounter() {
+			return lungdiseasecounter;
 		}
-		public void setProfession(String profession) {
-			this.profession = profession;
+		public void setLungdiseasecounter(String lungdiseasecounter) {
+			this.lungdiseasecounter = lungdiseasecounter;
+		}
+		public String getAsthmacounter() {
+			return asthmacounter;
+		}
+		public void setAsthmacounter(String asthmacounter) {
+			this.asthmacounter = asthmacounter;
 		}
 		}
