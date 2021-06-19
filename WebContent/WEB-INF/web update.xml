@@ -1,0 +1,31 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>StockManagement</display-name>
+  
+  <!-- Admin configurations -->
+  
+  <servlet>
+  	<servlet-name>admin_operations</servlet-name>
+  	<servlet-class>covid.admin.stockmanagement.AdminOperations</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>admin_operations</servlet-name>
+  	<url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Agent configurations -->
+  
+  <servlet>
+  	<servlet-name>agent_operations</servlet-name>
+  	<servlet-class>covid.agent.stockmanagement.AgentOperations</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>agent_operations</servlet-name>
+  	<url-pattern>/agent</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
