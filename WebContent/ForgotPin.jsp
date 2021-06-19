@@ -1,34 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <style><%@include file="/ForgotPinStyles.css"%></style>
+    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style><%@include file="/WEB-INF/ForgotPinStyles.css"%></style>
 </head>
-<body class="section">
-	<div class="box">
-	
-	    <div class="square" style="--i:0;"></div>
-	    <div class="square" style="--i:1;"></div>
-	    <div class="square" style="--i:2;"></div>
-	    <div class="square" style="--i:3;"></div>
-	    <div class="square" style="--i:4;"></div>
-	    <div class="square" style="--i:5;"></div>
-		<div class="container"></div>
-	       
-	         
-	        <form id="resetForm" action="./ForgotPinServlet" method="post">
-	        <h1>Enter your  Email address to give your new PIN CODE</h1><br>
-	           Enter Email: <input type = "text" name= "email"><br>
-	           New_PIN_Code: <input type = "text" name= "pin" value = ""><br>
-	           Confirm_PIN_Code: <input type = "text" name= "cpin" value = ><br>
-	           <input type = "submit" value = "Click"> 
-	           
-	        </form>
-	        </div>
-        <body>
+
 <div class="background">
     <div class="wrapper">
       <div class="container">
@@ -48,22 +28,22 @@
            	Reset Your Pin  
           </div>
         </div>
-        <form id="resetForm" action="reset_password" method="post">
+        <form id="resetForm" action="./ForgotPinServlet" method="post">
         	<div class="content">
           <div class="email">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
-            <input placeholder="Email">
+            <input placeholder="Email" name = "email">
           </div>
           <div class="email">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
-            <input placeholder="New Pin">
+            <input placeholder="New Pin" name = "pin">
           </div>
           <div class="email">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
-            <input placeholder="Confirm Pin" type="passowrd">
+            <input placeholder="Confirm Pin" type="passowrd" name = "cpin">
           </div>
           <div style="height: 15px"></div>
-          <button>Update My PinCode</button>
+          <button href = "./updatedPIN.jsp">Update My PinCode</button>
         </div>
         </form>
         
@@ -73,6 +53,7 @@
         	 Frequently clean your hands with soap and water, or an alcohol-based hand rub.
         </div>
     </div>
+  </div>
   </div>
 </body>
   </html>
