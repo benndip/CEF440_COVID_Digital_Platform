@@ -5,20 +5,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="PinAuthStyles.css" rel="stylesheet" type="text/css"></link>
+<style><%@include file="/WEB-INF/PinAuthStyles.css"%></style>
 </head>
 <body>
  <div class="login_form">
   <div class="details">
     <div class="welcome">Welcome</div>
-    <form action="/" method="post">
+    <br><div class="error_message">${message}</div>
+            <br>
+    <form action="login" method="post">
     <div class="wrap">
         <label>Beneficiary's name</label>
-        <input type="text" class="input">
+        <input type="text" class="input" name="beneficiary_name">
         </div>
         <div class="wrap">
         <label>Tel No.</label>
-        <input type="text" class="input">
+        <input type="text" class="input" name="beneficiary_tel">
         </div>
       <div class="wrap">
       
