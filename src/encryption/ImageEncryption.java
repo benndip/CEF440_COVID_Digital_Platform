@@ -3,18 +3,21 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Random;
 import java.util.Scanner;
 
-public class ImageEncription {
-	
+public class ImageEncryption {
+    Scanner scanner = new Scanner(System.in);
+    
 		
-	ImageEncription(){
-         Scanner scanner = new Scanner(System.in);
-         askQuestion();
+	ImageEncryption(){
+         String user_working_directory = System.getProperty("user.id");
+         String imagePath = user_working_directory + "/Back_Marché.png";
+         askQuestion(imagePath);
 			
 	}
 
-   private void askQuestion(image_path){
+   private void askQuestion(String image_path){
         while (true){
             System.out.println("*************************************************");
             System.out.println("What do you want to do with image?");
@@ -25,13 +28,13 @@ public class ImageEncription {
             switch (response){
               
                 case 'E':
-                    encrypt(image_path);
+                    encript(image_path);
                     break;
                 case 'D':
                     //  decription function call goes here
                     decrypt(image_path);
                 case 'Q':
-                    quit();
+                   
                     break;
                 default:
                     System.out.println("Not a valid answer");
@@ -39,7 +42,7 @@ public class ImageEncription {
         }
     }
 
-    public void encript(image_path){
+    public void encript(String image_path){
        
 		System.out.println("Note : Encryption Key act as Password to Decrypt the same Image,otherwise it will corrupt the Image.");
 	
@@ -59,10 +62,14 @@ public class ImageEncription {
 
         fis.read(data);
         int i = 0;
-                             
+       
+       
+        Random rand = new Random();
+        int ub = 500;
+        int key = rand.nextInt(ub);      
         // looping through each byte and ecripting using EncriptionProgram.java script
         for (byte b : data) {
-            data[i] = ep.encrypt(b);
+            data[i] = (byte)(b ^ key);
             i++;
         }
 
@@ -80,7 +87,7 @@ public class ImageEncription {
         System.out.println("Encyption Done...");
 
     }
-    public void decrypt(){
+    public void decrypt(String image_path){
         
 		// Here key is act as password to Encrypt Image
 		// instantiate EncriptionProgram class
@@ -97,10 +104,11 @@ public class ImageEncription {
 
         fis.read(data);
         int i = 0;
-                             
+     
+        int key =123;         
         // looping through each byte and decrypting using EncriptionProgram.java script
         for (byte b : data) {
-            data[i] = ep.derypt(b);
+            data[i] = (byte)(b ^ key );
             i++;
         }
 
