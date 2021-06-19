@@ -1,14 +1,16 @@
+package encryption;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ImageEncryption {
+public class ImageEncription {
 	
 		
-	ImageEncryption(){
+	ImageEncription(){
          Scanner scanner = new Scanner(System.in);
+         askQuestion();
 			
 	}
 
@@ -39,8 +41,7 @@ public class ImageEncryption {
 
     public void encript(image_path){
        
-		System.out.println("Note : Encryption Key act as Password to
-		Decrypt the same Image,otherwise it will corrupt the Image.");
+		System.out.println("Note : Encryption Key act as Password to Decrypt the same Image,otherwise it will corrupt the Image.");
 	
 		// Here key is act as password to Encrypt Image
 		// instantiate EncriptionProgram class
@@ -61,7 +62,7 @@ public class ImageEncryption {
                              
         // looping through each byte and ecripting using EncriptionProgram.java script
         for (byte b : data) {
-            data[i] = ep.encrypt(b)
+            data[i] = ep.encrypt(b);
             i++;
         }
 
@@ -99,7 +100,7 @@ public class ImageEncryption {
                              
         // looping through each byte and decrypting using EncriptionProgram.java script
         for (byte b : data) {
-            data[i] = ep.derypt(b)
+            data[i] = ep.derypt(b);
             i++;
         }
 

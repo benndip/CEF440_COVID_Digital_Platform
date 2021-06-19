@@ -20,32 +20,22 @@ public class EncryptionProgram {
         list = new ArrayList();
         shuffledList = new ArrayList();
         character = ' ';
-
-        newKey();
-        // askQuestion();
+        ask();
     }
-    private void askQuestion(message){
+
+    public void ask(){
         while (true){
             System.out.println("*************************************************");
             System.out.println("What do you want to do?");
-            System.out.println("(N)ewKey, (G)etKey, (E)ncrypt, (D)ecrypt, (Q)uit");
+            System.out.println("enter 'E' or 'e' to encrypt text or numbers");
+            // System.out.println("enter 'I' or 'i' to encrypt image");
+            System.out.println("enter 'Q' or 'q' to Quit");
             char response = Character.toUpperCase(scanner.nextLine().charAt(0));
 
             switch (response){
-                case 'N':
-                    newKey();
-                    break;
-                case 'G':
-                    getKey();
-                    break;
                 case 'E':
-                    String encripted_msg = encrypt(message);
-                    System.out.println(encripted_msg);
-                    break;
-                case 'D':
-                    String decripted_msg = decrypy(message);
-                    System.out.println(decripted_msg);
-
+                    char[] txt1 = encrypt("njume");
+                    decrypy(txt1);
                     break;
                 case 'Q':
                     quit();
@@ -55,7 +45,8 @@ public class EncryptionProgram {
             }
         }
     }
-    private void newKey(){
+
+    public void newKey(){
         character = ' ';
         list.clear();
         shuffledList.clear();
@@ -68,7 +59,7 @@ public class EncryptionProgram {
         Collections.shuffle(shuffledList);
         System.out.println("new key has been generated");
     }
-    private void getKey(){
+    public void getKey(){
         System.out.println("Key: ");
         for(Character x: list){
             System.out.print(x);
@@ -79,11 +70,9 @@ public class EncryptionProgram {
         }
         
     }
-    private void encrypt(message){
-       
-        String message = message
-
-        letters = message.toCharArray();
+    public char[] encrypt(String txt){
+        newKey();
+        letters = txt.toCharArray();
         for(int i = 0; i < letters.length; i++){
             for(int j = 0; j < list.size(); j++){
                 if(letters[i] == list.get(j)){
@@ -97,14 +86,10 @@ public class EncryptionProgram {
         }
         System.out.println();
 
-        return letters
-
+        return letters;
     }
-    private void decrypy(message){
-     
-        String message = message
-
-        letters = message.toCharArray();
+    public void decrypy(char[] txt){
+        letters = txt;
         for(int i = 0; i < letters.length; i++){
             for(int j = 0; j < shuffledList.size(); j++){
                 if(letters[i] == shuffledList.get(j)){
@@ -117,9 +102,9 @@ public class EncryptionProgram {
             System.out.print(x);
         }
         System.out.println();
-        return letters
+
     }
-    private void quit(){
+    public void quit(){
         System.out.println("Exiting Program");
         System.exit(0);
     }
