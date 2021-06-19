@@ -91,7 +91,37 @@ public class AdminOperations extends HttpServlet {
 		
 		String goods_name = request.getParameter("goods_name");
 		String admin_id = request.getParameter("admin_id");
-		int product_quantity = Integer.parseInt(request.getParameter("product_quantity"));
+		String productQ = request.getParameter("product_quantity");
+		int product_quantity;
+		
+		if(goods_name == "" || admin_id == "" || productQ == "" || productQ != "") {
+			if(goods_name == "") {
+				request.setAttribute("goodsNameError", "Error good name is required!");
+			}
+			if(admin_id == "") {
+				request.setAttribute("adminIdError", "Error an admin id is required!");
+			}
+			if(productQ == "") {
+				request.setAttribute("productQuantityError", "Error name is required!");
+			}
+			if(productQ != "") {
+				try {
+					Integer.parseInt(productQ);
+				} catch (NumberFormatException e) {
+					request.setAttribute("productQuantityError", "Error enter a valid number!");
+				}
+				
+			}
+			request.setAttribute("goodsName", goods_name);
+			request.setAttribute("productQuality", productQ);
+			request.setAttribute("adminId", admin_id);
+			this.getServletContext().getRequestDispatcher("/WEB-INF/AdminInterface.jsp").forward(request, response);
+			return;
+		}
+		
+		
+		
+		product_quantity = Integer.parseInt(productQ);
 		
         Date admin_date = new Date();  
         SimpleDateFormat admin_formatter = new SimpleDateFormat("MM/dd/yyyy");  
