@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style><%@include file="/WEB-INF/PinAuthStyles.css"%></style>
+<style><%@include file="/PinAuthStyles.css"%></style>
 </head>
 <body>
  <div class="login_form">
