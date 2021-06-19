@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 public class AgentOperations extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	private final String url = "jdbc:postgresql://localhost:5432/postgres";
+	private final String url = "jdbc:postgresql://localhost:5432/postgres";  //postgresql database
 	private final String user = "postgres";
 	private final String password = "covidapp";
 	
